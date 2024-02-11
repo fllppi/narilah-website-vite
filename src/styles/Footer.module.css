@@ -1,0 +1,50 @@
+.footer {
+    position: absolute;
+    bottom: var(--mantine-spacing-xs);
+    width: 100%;
+    z-index: 1;
+}
+
+.inner {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--mantine-color-white);
+    border-radius: var(--mantine-radius-lg);
+}
+
+.logo {
+    width: 110px;
+    padding-left: var(--mantine-spacing-xs);
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.text {
+    flex: 1;
+    text-align: center;
+    font-size: var(--mantine-font-size-sm);
+    font-weight: 500;
+    line-height: 1;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+    border-radius: var(--mantine-radius-sm);
+    padding-left: 70px;
+    @media screen and (max-width: 900px) {
+        padding-left: 0;
+        text-align: left;
+        white-space: nowrap;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    padding-right: var(--mantine-spacing-xs);
+}
